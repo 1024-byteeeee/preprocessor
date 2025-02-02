@@ -23,8 +23,6 @@ plugins {
 group = "com.github.replaymod"
 version = "SNAPSHOT"
 
-val kotestVersion: String by project.extra
-
 gradlePlugin {
     plugins {
         register("preprocess") {
@@ -54,8 +52,6 @@ repositories {
 dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
-    implementation("com.github.replaymod:remap:63aef8561")
+    implementation("com.github.1024-byteeeee:9d1d8bed6a")
     implementation("net.fabricmc:mapping-io:0.6.1")
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
-    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
 }
